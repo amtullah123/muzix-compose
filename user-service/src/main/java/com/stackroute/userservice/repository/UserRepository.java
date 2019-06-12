@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface UserRepository extends JpaRepository<User,Integer> {
-
     @Query("select u from User u where u.firstName=:firstName")
     public User findByName(@Param("firstName") String firstName) throws UserNotFoundException;
 }
+

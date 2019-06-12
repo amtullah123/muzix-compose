@@ -31,7 +31,7 @@ public class UserController {
             userService.saveUser(user);
             responseEntity=new ResponseEntity<String>("Successfully created ", HttpStatus.CREATED);
         }
-        catch (/*Exception*/UserAlreadyExistException ex)
+        catch (UserAlreadyExistException ex)
         {
             responseEntity=new ResponseEntity<String>(ex.getMessage(),HttpStatus.CONFLICT);
         }

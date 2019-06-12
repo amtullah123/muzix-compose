@@ -3,8 +3,7 @@ package com.stackroute.userservice.exception;
 public class UserAlreadyExistException extends  Exception {
     private String message;
 
-    public UserAlreadyExistException() {
-    }
+    public UserAlreadyExistException() {    }
     public UserAlreadyExistException(String message)
     {
         super(message);

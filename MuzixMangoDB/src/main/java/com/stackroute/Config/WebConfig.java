@@ -12,16 +12,4 @@ import javax.sql.DataSource;
 
 
 @Configuration
-public class WebConfig {
-
-    /*@Bean
-    ServletRegistrationBean h2servletRegistration()
-    {
-        ServletRegistrationBean servletRegistrationBean=new ServletRegistrationBean(new WebServlet());
-        servletRegistrationBean.addUrlMappings("/console/*");
-        return servletRegistrationBean;
-    }*/
-
-
-
-}
+public class WebConfig { }
